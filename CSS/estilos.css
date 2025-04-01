@@ -1,0 +1,425 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado y navegación */
+header {
+    background-color: #0073b1;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e0f7fa;
+}
+
+nav ul li a.active {
+    color: #e0f7fa;
+    border-bottom: 3px solid #e0f7fa;
+}
+
+/* Sección hero */
+.hero {
+    background-color: #e0f7fa;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.logo {
+    max-width: 300px;
+    height: auto;
+}
+
+/* Sección de bienvenida */
+.texto-bienvenida {
+    background-color: white;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-top: -50px;
+    position: relative;
+}
+
+.texto-bienvenida h1 {
+    color: #0073b1;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.texto-bienvenida p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Sección de información */
+.seccion-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 3rem auto;
+    gap: 2rem;
+    padding: 0 1.5rem;
+}
+
+.info {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.info h2 {
+    color: #0073b1;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e0f7fa;
+}
+
+/* Sección de mapa */
+.mapa {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.mapa iframe {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de contacto */
+.contacto {
+    background-color: #0073b1;
+    color: white;
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.contacto h2, .contacto h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contacto p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.contacto a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contacto a:hover {
+    color: #e0f7fa;
+    text-decoration: underline;
+}
+
+/* Formulario de contacto */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    color: #0073b1;
+    font-weight: 600;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #005d8f;
+}
+
+/* Secciones de misión y visión */
+.mision-vision {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.mision-vision h2 {
+    color: #0073b1;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.mision-vision img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto 1.5rem;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mision-vision p {
+    line-height: 1.8;
+    text-align: justify;
+    color: #444;
+}
+
+/* Sección de servicios médicos */
+.servicios {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.servicios h2, .categorias h3 {
+    color: #0073b1;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.servicios h2 {
+    font-size: 2.5rem;
+}
+
+.categorias h3 {
+    font-size: 1.8rem;
+}
+
+.categorias select {
+    display: block;
+    margin: 0 auto;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    min-width: 250px;
+}
+
+/* Ajustes para centrar los grids en la página de servicios */
+.grid, .grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/* Para asegurar que en tamaños intermedios tengamos un centrado adecuado */
+@media (min-width: 769px) and (max-width: 1220px) {
+    .grid, .grid-servicios {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+        justify-content: center;
+    }
+}
+
+.servicio, .categorias {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.servicio:hover, .categorias:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.servicio img, .categorias img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.servicio h3, .categorias h3 {
+    color: #0073b1;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+}
+
+.servicio p, .categorias p {
+    padding: 0 1rem 1.5rem;
+    color: #555;
+    flex-grow: 1; /* Para que el texto ocupe el espacio disponible y los botones queden alineados */
+}
+
+.btn-wpp, .whatsapp-link {
+    display: block;
+    background-color: #25d366;
+    color: white;
+    text-align: center;
+    padding: 0.8rem;
+    margin: 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-wpp:hover, .whatsapp-link:hover {
+    background-color: #128c7e;
+}
+
+/* Categoría específica de servicios */
+.categoria {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.categoria h2 {
+    color: #0073b1;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Corrección para el grid en la página de categoría */
+.categoria .grid {
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Pie de página */
+footer {
+    background-color: #005d8f;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #e0f7fa;
+    text-decoration: underline;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    
+    .seccion-info {
+        flex-direction: column;
+    }
+    
+    .info {
+        margin-bottom: 1.5rem;
+    }
+    
+    .grid, .grid-servicios {
+        grid-template-columns: 1fr;
+        max-width: 90%;
+    }
+    
+    .mision-vision {
+        padding: 1.5rem;
+    }
+}

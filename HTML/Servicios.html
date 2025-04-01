@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Médicos</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Servicios.html" class="active">Servicios</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="servicios">
+        <h2>Servicios Médicos</h2>
+        <div class="categorias">
+            <h3>Categorías de Servicios</h3>
+            <select onchange="window.location.href=this.value;">
+                <option value="" selected disabled>Selecciona una categoría</option>
+                <option value="categoria1.html">Cirugia</option>
+                <option value="categoria2.html">Medicina Interna</option>
+            </select>
+        </div>
+        
+        <div class="grid">
+            <div class="categorias">
+                <img src="../img/Cirugía General.webp" alt="Cirugia">
+                <h3>Cirugia</h3>
+                <p>Consulta general con médicos especializados para diagnóstico y tratamiento.</p>
+                <a href="categoria1.html" class="btn-wpp">Solicitar por WhatsApp</a>
+            </div>
+            <div class="categorias">
+                <img src="../img/emergencia.webp" alt="Medicina Interna">
+                <h3>Medicina Interna</h3>
+                <p>Atención inmediata para situaciones de urgencia o emergencias médicas.</p>
+                <a href="categoria2.html" class="btn-wpp">Solicitar por WhatsApp</a>
+            </div>
+
+    </section>
+
+    <footer>
+        <p>Síguenos en:</p>
+        <a href="#">Facebook</a> |
+        <a href="#">TikTok</a> |
+        <a href="#">Instagram</a>
+    </footer>
+</body>
+</html>
